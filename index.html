@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <title>Valentine Memory Game</title>
+</head>
+
+<body>
+  <h1>💘 Valentine Memory Game 💘</h1>
+  <p>Click two cards to find matching pairs.</p>
+
+  <label>
+    Difficulty:
+    <select id="difficulty">
+      <option value="easy">Easy (4×4)</option>
+      <option value="medium">Medium (5×4)</option>
+      <option value="hard">Hard (6×4)</option>
+    </select>
+  </label>
+
+  <p>Moves: <span id="moves">0</span></p>
+  <p>Total Moves (All Tabs): <span id="globalMoves">0</span></p>
+  <p>Time: <span id="time">0</span> seconds</p>
+
+  <div id="gameBoard"></div>
+
+  <p id="message"></p>
+
+  <button id="restart">Restart</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
